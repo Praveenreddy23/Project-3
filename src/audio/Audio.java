@@ -24,7 +24,7 @@ public class Audio {
         String response = "";
 
 
-        while (!response.equals("Q")){
+        while (response != ("Q")){// while(!responce = ("Q"))
             System.out.println("P = play, S = stop, R = restart, Q = Quit");
             System.out.println("Enter your choice: ");
 
@@ -37,7 +37,7 @@ public class Audio {
                 case ("R"): clip.setMicrosecondPosition(1);break;
                 case ("Q"): clip.close();break;
                 default:
-                    System.out.println("Not a valid responce");
+                    System.out.println("Not a valid response");
             }
         }
 
